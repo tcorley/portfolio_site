@@ -1,7 +1,7 @@
 {
-  "name": "surgetest-marko",
+  "name": "personal-website",
   "version": "1.0.0",
-  "description": "Demo of how to build an app using marko-starter",
+  "description": "Tyler Corley's personal website",
   "repository": {
     "type": "git",
     "url": "https://github.com/marko-js-samples/marko-starter-demo"
