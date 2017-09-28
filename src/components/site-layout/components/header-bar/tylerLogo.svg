@@ -1,26 +1,12 @@
-class {
-    onCreate() {
-        this.state = {
-            routes: [
-                'home',
-                'projects',
-                'music'
-            ]
-        }
-        this.what = "what"
-    }
-    onInput(input) {
-        input.currentRoute = input.currentRoute || ''
-    }
-}
-
-
-<nav.menu>
-    <ul>
-        <li><a.logo href="/">
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="212.000000pt" height="205.000000pt" viewBox="0 0 212.000000 205.000000"
  preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+</metadata>
 <g transform="translate(0.000000,205.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">
 <path d="M150 1025 l0 -905 355 0 355 0 0 25 0 25 -335 0 -335 0 0 860 0 860
@@ -45,9 +31,3 @@ fill="#000000" stroke="none">
 10 17 22 17 25 0 4 -47 7 -105 7 l-105 0 0 -305z"/>
 </g>
 </svg>
-</a></li>
-        <li for(route in state.routes)>
-            <a class=(input.currentRoute == route && 'active') href=(route != 'home' ? '/' + route : '/')>${route}</a>
-        </li>
-    </ul>
-</nav>
