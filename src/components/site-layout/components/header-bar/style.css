@@ -1,11 +1,27 @@
 .menu ul {
     list-style: none;
+    display: inline-flex;
 }
 
 .menu ul li a {
     color: aliceblue;
 }
 
-.menu ul {
-    display: inline-flex;
+.menu ul li a.active {
+    text-decoration: underline;
+}
+
+.menu ul li a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.menu .logo path {
+    fill:aliceblue;
+}
+
+.menu .logo,
+.menu .logo svg {
+    width: 50px;
+    height: 50px;
 }
