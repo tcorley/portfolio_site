@@ -1,9 +1,17 @@
+import startJam from './utils/rythm.js'
+
+class {
+  jam() {
+    startJam()
+  }
+}
+
 <site-layout route='home'>
   <@title>Tyler Corley</@title>
   <@content>
-    <!-- <boise-button/> -->
     <section>
       SOON.
+      <div on-click('jam')>press me</div>
     </section>
   </@content>
 </site-layout>
