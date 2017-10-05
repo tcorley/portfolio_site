@@ -4,6 +4,8 @@ body {
   padding: 0;
   margin: 0;
   color: #333;
+  display: grid;
+  grid-template-rows: 1fr 15fr;
 }
 
 a {
@@ -59,11 +61,11 @@ p {
 
 .content {
   padding: 1em 2em;
-  max-width: 30em;
+  max-width: 36em;
   margin: auto;
-  color: white;
-  position: absolute;
-  top: 50%;
+  /* color: white; */
+  /* position: absolute; */
+  /* top: 50%; */
 }
 
 code {
@@ -78,4 +80,8 @@ code {
 pre code {
   display: block;
   color: #396;
+}
+
+html, body {
+  height: 100%;
 }

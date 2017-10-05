@@ -6,12 +6,44 @@ class {
   }
 }
 
+style.less {
+  section {
+    display: grid;
+    .centered {
+      color: aliceblue;
+      justify-content: center;
+      h1 {
+        font-size: 55px;
+        letter-spacing: 12px;
+        margin-bottom: 15px;
+      }
+      &__descriptors {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px; 
+        div {
+          text-align: center;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
 <site-layout route='home'>
   <@title>Tyler Corley</@title>
   <@content>
     <section>
-      SOON.
-      <div on-click('jam')>press me</div>
+      <div.centered>
+        <h1>Tyler Corley</h1>
+        <div.centered__descriptors>
+          <div>Programmer</div>
+          <div>Musician</div>
+          <div>Human</div>
+        </div>
+      </div>
+      <!-- <audio src="./utils/strobe.mp3"></audio> -->
+      <!-- <div on-click('jam')>press me</div> -->
     </section>
   </@content>
 </site-layout>
