@@ -4,7 +4,8 @@ class {
             routes: [
                 'home',
                 'projects',
-                'music'
+                'music',
+                'resume'
             ]
         }
         this.what = "what"
@@ -17,7 +18,7 @@ class {
 
 <nav.menu>
     <ul>
-        <li><a.logo href="/"><logo/></a></li>
+        <li><a.logo.rythm-bass href="/"><logo/></a></li>
         <li for(route in state.routes)>
             <a class=(input.currentRoute == route && 'active') href=(route != 'home' ? '/' + route : '/')>${route}</a>
         </li>
