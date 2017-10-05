@@ -268,7 +268,7 @@ babel-code-frame@^6.22.0, babel-code-frame@^6.26.0:
     esutils "^2.0.2"
     js-tokens "^3.0.2"
 
-babel-core@^6.26.0, babel-core@^6.7.6:
+babel-core@^6.0.14, babel-core@^6.26.0, babel-core@^6.7.6:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.26.0.tgz#af32f78b31a6fcef119c87b0fd8d9753f03a0bb8"
   dependencies:
@@ -2733,6 +2733,15 @@ labeled-stream-splicer@^1.0.0:
     isarray "~0.0.1"
     stream-splicer "^1.1.0"
 
+lasso-babel-transform@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/lasso-babel-transform/-/lasso-babel-transform-1.0.1.tgz#6e4bdc32ec83278705879c21b9702e1584fdc835"
+  dependencies:
+    babel-core "^6.0.14"
+    lasso-caching-fs "^1.0.1"
+    lasso-package-root "^1.0.0"
+    strip-json-comments "^2.0.1"
+
 lasso-caching-fs@^1.0.0, lasso-caching-fs@^1.0.1, lasso-caching-fs@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/lasso-caching-fs/-/lasso-caching-fs-1.0.2.tgz#9be4eb1f06aac1260344caeaef42c2f0086eb10d"
@@ -2949,6 +2958,12 @@ lru-cache@^4.0.1:
     lasso "^2.8.3"
     lasso-marko "^2.1.0"
     lasso-resolve-from "^1.2.0"
+
+marko-starter-babel@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/marko-starter-babel/-/marko-starter-babel-1.0.2.tgz#8ebdfbb853af68262e194ce537b65061f6c70069"
+  dependencies:
+    lasso-babel-transform "^1.0.1"
 
 marko-starter-generic-server@^1.0.0:
   version "1.0.1"
