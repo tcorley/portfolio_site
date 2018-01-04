@@ -28,6 +28,30 @@ style.less {
       }
     }
   }
+  .bmc-button {
+    text-decoration:none;
+    display:table !important;
+    padding:5px 10px !important;
+    color:#ffffff !important;
+    background-color:#bb5794 !important;
+    border-radius:3px !important;
+    border:1px solid transparent !important;
+    font-size:26px !important;
+    -webkit-transition:0.3s all linear !important;
+    transition:0.3s all linear !important;
+    margin:20px auto !important;
+    font-family:"Cookie", cursive !important;
+    img {
+        vertical-align:middle !important;
+    }
+  }
+  .bmc-button:hover, .bmc-button:active, .bmc-button:focus {
+    -webkit-box-shadow:0 4px 16px 0 rgba(190,190,190,0.45) !important;
+    box-shadow:0 4px 16px 0 rgba(190,190,190,0.45) !important;
+    opacity:0.85 !important;
+    color:#ffffff !important;
+    text-decoration: none;
+  }
 }
 
 <site-layout route='home'>
@@ -41,6 +65,7 @@ style.less {
           <div>Musician</div>
           <div>Human</div>
         </div>
+        <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/corley"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="BMC logo"><span style="margin-left:5px">Coffee++</span></a>
       </div>
       <!-- <audio src="./utils/strobe.mp3"></audio> -->
       <!-- <div on-click('jam')>press me</div> -->
