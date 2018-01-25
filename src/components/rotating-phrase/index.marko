@@ -1,0 +1,25 @@
+class {
+    onCreate() {
+        this.state = {
+            phrases: [
+                'Lost?',
+                'Intrigued?',
+                'Is this trying too hard?',
+                'Better luck next time',
+                '¯\\_(ツ)_/¯',
+                'Code Bear🐻',
+                'Hello World',
+                'Oh hey it me'
+            ],
+            currentPhrase: ''
+        };
+        this.state.currentPhrase = this.state.phrases[~~(this.state.phrases.length * Math.random())];
+    }
+    onMount() {
+        setInterval(() => {
+            this.state.currentPhrase = this.state.phrases[~~(this.state.phrases.length * Math.random())];
+        }, 3000);
+    }
+}
+
+<h1>${state.currentPhrase}</h1>

@@ -1,20 +1,19 @@
 import startJam from './utils/rythm.js'
 
 class {
-  jam() {
-    startJam()
-  }
+    jam() {
+        startJam()
+    }
 }
 
 style.less {
   section {
     display: grid;
     .centered {
-      color: aliceblue;
+      color: @neutral;
       justify-content: center;
       h1 {
         font-size: 55px;
-        letter-spacing: 12px;
         margin-bottom: 15px;
       }
       &__descriptors {
@@ -32,8 +31,8 @@ style.less {
     text-decoration:none;
     display:table !important;
     padding:5px 10px !important;
-    color:#ffffff !important;
-    background-color:#bb5794 !important;
+    color:@neutral !important;
+    background-color:@secondary !important;
     border-radius:3px !important;
     border:1px solid transparent !important;
     font-size:26px !important;
@@ -49,7 +48,7 @@ style.less {
     -webkit-box-shadow:0 4px 16px 0 rgba(190,190,190,0.45) !important;
     box-shadow:0 4px 16px 0 rgba(190,190,190,0.45) !important;
     opacity:0.85 !important;
-    color:#ffffff !important;
+    color:@neutral !important;
     text-decoration: none;
   }
 }
@@ -59,7 +58,7 @@ style.less {
   <@content>
     <section>
       <div.centered>
-        <h1>Tyler Corley</h1>
+        <rotating-phrase/>
         <div.centered__descriptors>
           <div>Programmer</div>
           <div>Musician</div>
