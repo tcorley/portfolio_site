@@ -5,16 +5,16 @@
         align-items: center;
 
         li a {
-            color: aliceblue;
+            color: @neutral;
             transition: color 0.2s ease-out;
             &.active {
-                color: red;
+                color: @secondary;
                 &::after {
                     width: 80%;
                 }
             }
             &:hover {
-                color: red;
+                color: @secondary;
                 text-decoration: none;
                 &::after {
                     width: 80%;
@@ -24,7 +24,7 @@
                 content: '';
                 display: block;
                 width: 0;
-                background: red;
+                background: @secondary;
                 height: 2px;
                 transition: width 0.2s linear;
                 margin-top: 2px;
@@ -34,10 +34,10 @@
 
     .logo {
         path {
-            fill: aliceblue;
+            fill: @neutral;
             transition: fill 0.2s ease-out;
             &:hover {
-                fill: red;
+                fill: @secondary;
             }
         }
         &,
