@@ -1,0 +1,48 @@
+.-(@theme);
+.-(theme0) {
+    @primary-dark: #114b5f;
+    @neutral: #e4fde1;
+    @secondary: #f45b69;
+    @secondary-dark: #6b2737;
+}
+.-(theme1) {
+    @primary-dark: #1f271b;
+    @neutral: #28afb0;
+    @secondary: #f4d35e;
+    @secondary-dark: #ee964b;
+}
+.-(theme2) {
+    @primary-dark: #2f4858;
+    @neutral: #55dde0;
+    @secondary: #f6ae2d;
+    @secondary-dark: #f26419;
+}
+.-(theme3) {
+    @primary-dark: #c84630;
+    @neutral: #d4a0a7;
+    @secondary: #e3e3e3;
+    @secondary-dark: #898989;
+}
+.-(theme4) {
+    @primary-dark: #1d3557;
+    @neutral: #f1faee;
+    @secondary: #a8dadc;
+    @secondary-dark: #e63946;
+}
+.-(theme5) {
+    @primary-dark: #364958;
+    @neutral: #c9e4ca;
+    @secondary: #87bba2;
+    @secondary-dark: #3b6064;
+}
+.-(theme6) {
+    @primary-dark: #161925;
+    @neutral: #cbf7ed;
+    @secondary: #8ea8c3;
+    @secondary-dark: #23395b;
+}
+.-(@_){@primary: #2d7d98;}
+
+// Change this value to the color theme of your choosing
+@theme: ~`"theme" + Math.floor(Math.random() * Math.floor(7))`;
+// @theme: theme5;
