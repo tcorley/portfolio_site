@@ -1,0 +1,28 @@
+class {
+    onCreate() {
+        this.state = {
+            startTimeSeconds: this.calculateDate()
+        };
+    }
+    onMount() {
+        setInterval(() => this.state.startTimeSeconds = this.calculateDate(), 1000);
+    }
+    calculateDate() {
+        return Math.floor((Date.now() - (new Date(2015, 5, 1, 8)).getTime())/1000);
+    }
+}
+
+style.less {
+    span.centered {
+        &__tagline {
+            margin-bottom: 10px;
+        }
+        &__seconds {
+            color: @secondary-dark;
+        }
+    }
+}
+
+<span.centered__tagline>
+    Hello! Thanks for stopping by - My name is Tyler and I'm currently a Software Engineer at <a href="https://ebay.com">eBay</a> (<span.centered__seconds>${state.startTimeSeconds}</span> seconds and counting!). Passionate about Front End development.
+</span>
